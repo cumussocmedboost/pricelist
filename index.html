@@ -3,65 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cusmus Socmed Boost</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="your-logo.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cumus Socmed Boost</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2b304f;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        header {
+            background-color: #0b0e3c;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+nav {
+    display: flex; /* Use flexbox for the nav */
+    justify-content: center; /* Center the buttons */
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: #1db954;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    margin: 5px;
+    width: 200px;
+    height: 60px; /* Fixed height for buttons */
+    display: flex; /* Flexbox for inner alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+        nav button:hover {
+            background-color: #0b0e3c;
+        }
+        section {
+            padding: 20px;
+            display: none; /* Hide sections by default */
+            text-align: center;
+        }
+        section.active {
+            display: block; /* Show the section when active */
+        }
+        .service-category {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .service-category button {
+            background-color: #11154f;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            width: 150px;
+        }
+        .service-category button:hover {
+            background-color: #1db954;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 15px;
+            border: 1px solid white;
+            text-align: left;
+        }
+        table th {
+            background-color: #11154f;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-gallery .image-box {
+            width: 150px;
+            height: 150px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #0b0e3c;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Cumus Socmed Boost</h1>
+        <p>Boost your social media presence effortlessly!</p>
+    </header>
 
-    <!-- Front Page Section -->
-    <section id="front-page" class="section">
-        <div class="container">
-            <h1 class="title">Cusmus Socmed Boost</h1>
-            <p class="tagline">Boost your social media presence and visibility!</p>
-            <p class="description">
-                We offer a range of services that can boost your followers, likes, views, and even help monetize your accounts.
-                Our flexible payment options include GCash, PayPal, and Binance. Trusted by over 100 clients on Facebook, we guarantee 
-                reliable, safe, and responsive services. With 30+ legit checks, 10+ page reviews, and hundreds of boosting proofs, 
-                you’re in good hands.
-            </p>
-            <ul class="features">
-                <li>Flexible payment options: GCash, PayPal, Binance</li>
-                <li>Many comprehensive services to choose from</li>
-                <li>Trusted by over 100 clients</li>
-                <li>30+ legit checks, 10+ page reviews</li>
-                <li>Instant delivery, responsive support</li>
+<nav>
+    <button onclick="toggleSection('about')">About Us</button>
+    <button onclick="toggleSection('services')">Services | Pricelists</button>
+    <button onclick="toggleSection('order')">Order Now</button>
+    <button onclick="toggleSection('terms')">Terms of Service and Policy</button>
+</nav>
+
+<section id="about" class="active">
+    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px; margin-top: 40px; flex-direction: column;">
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="file:///C:/Users/Macky/Downloads/343343162_924603241968856_7468520804986166831_n.jpg" 
+                 alt="Cumus Socmed Boost Logo" 
+                 style="width: 105px; border-radius: 15px; margin-right: 20px;"/>
+            <h2>Who We Are</h2>
+        </div>
+    </div>
+    <p>
+        At <strong>Cumus Socmed Boost</strong>, we don’t just help you gain followers—we help you build your online empire. 
+        Our services are designed to elevate your social media presence effortlessly, making sure your brand is seen and heard. 
+        Whether you’re a small business owner, influencer, or someone just looking to boost their visibility, we’ve got you covered.
+    </p>
+
+    <!-- Why Choose Us Section -->
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 60px;">
+        <img src="C:\Users\Macky\Downloads\cusmus socmedboost.jpg" alt="Why Choose Us Image" style="width: 300px; border-radius: 50px; margin-right: 20px;"/>
+        <div style="flex-basis: 45%;">
+            <h3>Why Choose Us?</h3>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>⚡ Quick Results:</strong> Instant boosting for followers, likes, and views.</li>
+                <li><strong>💡 Trusted by 100+ Clients:</strong> Proven track record with over a hundred satisfied partners.</li>
+                <li><strong>🌍 Worldwide Reach:</strong> Expand your presence across the globe with just a few clicks.</li>
+                <li><strong>🔒 100% Secure:</strong> We prioritize the safety of your accounts with reliable and secure boosting services.</li>
             </ul>
-            <p class="contact-info">
-                Contact us: kyumuscumus@gmail.com | <a href="https://www.facebook.com/cumussmm">Facebook Page</a>
+        </div>
+    </div>
+
+    <!-- Our Boosting Power Section -->
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 40px;">
+        <div style="flex-basis: 45%;">
+            <h3>Our Boosting Power</h3>
+            <p style="margin-bottom: 10px;">
+                With our advanced social media algorithms and engagement strategies, your posts, pages, and profiles will reach new heights:
+            </p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>💬 Increase your engagement with real followers</li>
+                <li>🎯 Target your audience and grow your influence</li>
+                <li>📈 Watch your stats soar within days</li>
+            </ul>
+        </div>
+        <img src="C:\Users\Macky\Downloads\cusmus socmedboost 3.jpg" alt="Our Boosting Power Image" style="width: 300px; border-radius: 50px; margin-left: 20px;"/>
+    </div>
+
+    <!-- Our Mission Section -->
+    <div style="display: flex; align-items: center; justify-content: center; margin-top: 40px;">
+        <img src="C:\Users\Macky\Downloads\cumus socmed boost2.jpg" alt="Our Mission Image" style="width: 300px; border-radius: 50px; margin-right: 20px;"/>
+        <div style="flex-basis: 45%;">
+            <h3>Our Mission</h3>
+            <p>
+                Our mission is simple: to make social media growth accessible to everyone. We believe that with the right tools, 
+                anyone can rise to the top and achieve their goals—be it personal branding, product sales, or just a little boost in digital fame.
             </p>
         </div>
-    </section>
+    </div>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="service-list">
-                <!-- Add each service category dynamically -->
-                <div class="service-card">
-                    <h3>Facebook Boosting</h3>
-                    <p>Details of your Facebook services go here.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Instagram Boosting</h3>
-                    <p>Details of your Instagram services go here.</p>
-                </div>
-                <!-- Add more service cards here -->
-            </div>
+    <div style="margin-top: 100px; marin-bottom: 100px;">
+        <h3>What Our Clients Say</h3>
+        <blockquote style="font-style: italic; border-left: 4px solid #1db954; padding-left: 10px;">
+            "Cumus Socmed Boost helped me grow my follower base by 500% in just a week! The results were amazing, and I can't recommend them enough."
+            <br>— Satisfied Client
+        </blockquote>
+        <blockquote style="font-style: italic; border-left: 4px solid #1db954; padding-left: 10px;">
+            "Thanks to their boosting services, my small business gained thousands of new customers. It's the best investment I've made for my online presence!"
+            <br>— Happy Entrepreneur
+        </blockquote>
+    </div>
+</section>
+
+
+
+
+
+    <section id="services">
+        <h2>Services | Pricelists</h2>
+
+        <div class="service-category">
+            <button onclick="toggleService('facebook')">Facebook Services</button>
+            <button onclick="toggleService('instagram')">Instagram Services</button>
+            <button onclick="toggleService('tiktok')">TikTok Services</button>
         </div>
+
+        <!-- Facebook Services (default active under Services) -->
+        <section id="facebook" class="active">
+            <h3>Facebook Services</h3>
+            <table>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price (per 1000)</th>
+                    <th>Min Order</th>
+                    <th>Max Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Profile Followers</td>
+                    <td>150 PHP</td>
+                    <td>100</td>
+                    <td>1,000,000</td>
+                    <td>Fast delivery, 30-day refill</td>
+                </tr>
+                <tr>
+                    <td>Page Likes</td>
+                    <td>200 PHP</td>
+                    <td>100</td>
+                    <td>500,000</td>
+                    <td>Worldwide, non-drop guarantee</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Instagram Services -->
+        <section id="instagram">
+            <h3>Instagram Services</h3>
+            <table>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price (per 1000)</th>
+                    <th>Min Order</th>
+                    <th>Max Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Followers</td>
+                    <td>120 PHP</td>
+                    <td>100</td>
+                    <td>500,000</td>
+                    <td>Real followers, instant delivery</td>
+                </tr>
+                <tr>
+                    <td>Likes</td>
+                    <td>150 PHP</td>
+                    <td>50</td>
+                    <td>1,000,000</td>
+                    <td>Engagement guaranteed</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- TikTok Services -->
+        <section id="tiktok">
+            <h3>TikTok Services</h3>
+            <table>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Price (per 1000)</th>
+                    <th>Min Order</th>
+                    <th>Max Order</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Followers</td>
+                    <td>180 PHP</td>
+                    <td>100</td>
+                    <td>1,000,000</td>
+                    <td>Quality followers, real engagement</td>
+                </tr>
+                <tr>
+                    <td>Views</td>
+                    <td>200 PHP</td>
+                    <td>50</td>
+                    <td>500,000</td>
+                    <td>Boost your video visibility</td>
+                </tr>
+            </table>
+        </section>
+    </section>
+    <section id="order">
+        <h2>Order Now</h2>
+        <p>Contact or message us on Facebook to start our partnership:</p>
+        <a href="https://www.facebook.com/cumussmm">Facebook Cumus SMM</a>
+    </section>
+    <section id="terms">
+        <h2>Terms of Service and Policy</h2>
+        <p>We value our clients and adhere to the following terms:</p>
+        <ul>
+            <li>All services are final and non-refundable.</li>
+            <li>Delivery times may vary based on demand.</li>
+            <li>We guarantee non-drop services within 30 days.</li>
+            <li>Clients must provide accurate account information for successful delivery.</li>
+            <li>We reserve the right to refuse service to any account deemed suspicious.</li>
+        </ul>
     </section>
 
-    <!-- Order Section -->
-    <section id="order" class="section">
-        <div class="container">
-            <h2 class="section-title">Order Now</h2>
-            <p class="order-instruction">Contact or message us on Facebook to start our partnership!</p>
-            <a href="https://www.facebook.com/cumussmm" class="cta-button">Message Us on Facebook</a>
-            <p>Or fill out <a href="your-google-form-link-here" target="_blank">this Google Form</a> for a quote.</p>
-        </div>
-    </section>
+    <div class="image-gallery">
+        <div class="image-box"><img src="C:\Users\Macky\Downloads\cusmus socmedboost 3.jpg" alt="Client 1"></div>
+        <div class="image-box"><img src="C:\Users\Macky\Downloads\cumus socmed boost2.jpg" alt="Client 2"></div>
+        <div class="image-box"><img src="C:\Users\Macky\Downloads\cusmus socmedboost.jpg" alt="Client 3"></div>
+    </div>
 
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Cumus Socmed Boost. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function toggleService(serviceId) {
+            const services = document.querySelectorAll('#services section');
+            services.forEach(service => {
+                service.classList.remove('active');
+            });
+            document.getElementById(serviceId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
